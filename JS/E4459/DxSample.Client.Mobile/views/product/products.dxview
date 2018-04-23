@@ -1,0 +1,9 @@
+<div data-options="dxView : { name: 'Products', title: 'Products', targetFrame: 'navigation' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxList: { dataSource: dataSource, pullRefreshEnabled: true }">
+            <div data-options="dxTemplate : { name: 'item' } " >
+                <div class="list-item" data-bind="text: ProductName() + ' : ' + Globalize.format(UnitPrice(), 'c')"></div>
+            </div>
+        </div>
+    </div>
+</div>
